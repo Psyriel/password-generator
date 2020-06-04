@@ -5,6 +5,8 @@
 var generateBtn = document.querySelector("#generate");
 /* Function to generate combination of password */
 function generatePassword() {
+    window.prompt(" How long do you want your password? Min. 8 Max 128 ")
+    console.log(long);
     var pass = '';
     var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
         'abcdefghijklmnopqrstuvwxyz0123456789@#$';
