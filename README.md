@@ -1,2 +1,1 @@
-# password-generator
-strong password generator 
+# Password Generator Starter Code
