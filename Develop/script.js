@@ -1,19 +1,30 @@
-// Assignment code here
-
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 /* Function to generate combination of password */
 function generatePassword() {
+    var long = window.prompt(" How long do you want your password? Min. 8 Max 128 ");
+    console.log(long);
+
+    window.alert(' Do you want lowercase letters? ');
+
+    window.alert(' Do you want uppercase letters? ');
+
+    window.alert(' Do you want numbers? ');
+
+    window.alert(' Do you want special charactors? ');
+
+
     var pass = '';
     var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
-        'abcdefghijklmnopqrstuvwxyz0123456789@#$';
+        'abcdefghijklmnopqrstuvwxyz' +
+        '0123456789' +
+        '`~!@#$%^&*()_-+=';
 
-    for (i = 1; i <= 8; i++) {
+    for (i = 1; i <= long; i++) {
         var char = Math.floor(Math.random() *
             str.length + 1);
 
-        pass += str.charAt(char)
+        pass += str.charAt(char);
     }
 
     return pass;
